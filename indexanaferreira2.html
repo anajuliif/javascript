@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    body{
+        background-color: lightcyan;
+    }
+</style>
+</head>
+<body>
+    <script>
+        function resultado() {
+            //window.alert("teste")
+            var var1 = document.getElementById("val1");
+            var var2 = document.getElementById("val2");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("resultado").innerText = var1.value * var2.value / 2;
+        }
+        
+    </script>
+    <input id="val1" value="1">
+    <input id="val2" value="2">
+    <button onclick="resultado()">Escrever1</button>
+    <p id="resultado">XXXX</p>
+
+</body>
+</html>
