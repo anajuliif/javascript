@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    body{
+        background-color:blanchedalmond;
+    }
+</style>
+</head>
+<body>
+    <script>
+         function escreve() {
+            //window.alert("teste")
+            var var1 = document.getElementById("val1");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("cubo").innerText = var1.value*var1.value*var1.value;
+        }
+        
+    </script>
+    <h1> Número ao cubo</h1>
+   <input id="val1" value="Qualquer número">
+   <button onclick="escreve()">Valor</button>
+   <p id="cubo">XXXX</p>
+    
+
+    
+</body>
+</html>
