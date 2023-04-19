@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    body{
+        background-color: aquamarine;
+    }
+</style>
+</head>
+<body>
+    <script>
+        
+        function idade() {
+            //window.alert("teste")
+            var var1 = document.getElementById("val1");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("resultado").innerText = 2023 -var1.value;
+        }
+       
+
+    </script>
+    <h1> Maior de idade</h1>
+    <input id="val1" value="1">
+    <button onclick="idade()">calcular</button>
+    <p id="resultado">XXXX</p>
+</body>
+</html>
