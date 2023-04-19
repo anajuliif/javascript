@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+<style>
+    body{
+        background-color: aquamarine;
+    }
+</style>
+</head>
+<body>
+    <script>
+        
+        function escreve8() {
+            //window.alert("teste")
+            var var1 = document.getElementById("valcombustível");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("combustível").innerText = var1.value/5;
+        }
+        function escreve9() {
+            //window.alert("teste")
+            var var1 = document.getElementById("vallitros");
+            //window.alert(var1.value + " " + var2.value)
+            document.getElementById("litros").innerText = var1.value*20;
+        }
+    
+       
+</script>
+<h1> Quantos litros posso comprar?</h1>
+        <input id="valcombustível" value="Dinheiro em R$">
+                <button onclick="escreve8()">Valor</button>
+                <p id="combustível">XXXX</p>
+                </div>
+                <div>
+                    <h1>Quantos km posso percorrer?</h1>
+                    
+                    <input id="vallitros" value="Litros de combustível">
+                    <button onclick="escreve9()">Valor</button>
+                    <p id="litros">XXXX</p>
+                    </div>
+</body>
+</html>
