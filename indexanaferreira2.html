@@ -11,19 +11,21 @@
 </head>
 <body>
     <script>
-        function resultado() {
+    function escreve2() {
             //window.alert("teste")
-            var var1 = document.getElementById("val1");
-            var var2 = document.getElementById("val2");
+            var var1 = document.getElementById("valcelsius");
             //window.alert(var1.value + " " + var2.value)
-            document.getElementById("resultado").innerText = var1.value * var2.value / 2;
-        }
-        
+            document.getElementById("celsius").innerText = var1.value-32/1.8;
+    }
     </script>
-    <input id="val1" value="1">
-    <input id="val2" value="2">
-    <button onclick="resultado()">Escrever1</button>
-    <p id="resultado">XXXX</p>
+    <h1>Conversão de fahrenheit para celsius</h1>
+   
+    
+    <input id="valcelsius" value="Temperatura em F°">
+    <button onclick="escreve2()">Valor</button>
+    <p id="celsius">XXXX</p>
+    
+
 
 </body>
 </html>
